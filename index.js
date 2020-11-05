@@ -7,6 +7,6 @@ if (args.length < 1) {
 }
 
 fetchBreedDescription(args[0],(err,desc) => {
-  if (err) console.log(err);
+  if (err) console.log(err.message);
   else console.log(desc);
 });
